@@ -19,15 +19,27 @@ super-feynman-resources/
 │   │   ├── backend-dev/           # Express + JavaScript + SQLite patterns
 │   │   │   ├── SKILL.md
 │   │   │   └── resources/
-│   │   │       └── complete-backend-guide.md
+│   │   │       ├── complete-backend-guide.md
+│   │   │       ├── architecture-patterns.md
+│   │   │       ├── database-sqlite.md
+│   │   │       ├── error-handling-middleware.md
+│   │   │       └── routes-examples.md
 │   │   ├── frontend-dev/          # React + Tailwind CSS patterns
 │   │   │   ├── SKILL.md
 │   │   │   └── resources/
-│   │   │       └── complete-frontend-guide.md
+│   │   │       ├── complete-frontend-guide.md
+│   │   │       ├── audio-recording.md
+│   │   │       ├── component-patterns.md
+│   │   │       ├── data-fetching-hooks.md
+│   │   │       ├── routing-navigation.md
+│   │   │       └── tailwind-styling.md
 │   │   ├── api-integration/       # Anthropic Claude & OpenAI Whisper
 │   │   │   ├── SKILL.md
 │   │   │   └── resources/
-│   │   │       └── complete-api-guide.md
+│   │   │       ├── complete-api-guide.md
+│   │   │       ├── anthropic-integration.md
+│   │   │       ├── error-handling-retries.md
+│   │   │       └── whisper-integration.md
 │   │   └── skill-rules.json       # Auto-activation configuration
 │   ├── commands/
 │   │   ├── quick-start.md         # /quick-start command

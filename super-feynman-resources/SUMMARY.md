@@ -8,14 +8,23 @@ This folder contains **production-tested development patterns** from a 6-month e
 
 ## What You Get
 
-### 📁 Resource Files (6 Guides)
+### 📁 Claude Code Skills Package
+
+This uses the **Claude Code skills format** with automatic activation and progressive disclosure:
 
 1. **INTEGRATION_README.md** - Start here! Complete integration guide
-2. **backend-development-guide.md** - Express + JavaScript + SQLite patterns
-3. **frontend-development-guide.md** - React + Tailwind CSS patterns
-4. **api-integration-guide.md** - Anthropic Claude & OpenAI Whisper integration
-5. **project-structure-guide.md** - Folder structure and file organization
-6. **quick-start-checklist.md** - Step-by-step implementation timeline
+2. **backend-dev skill** - Express + JavaScript + SQLite patterns
+   - Located in `.claude/skills/backend-dev/`
+   - 5 detailed resource files (complete-backend-guide.md, architecture-patterns.md, database-sqlite.md, error-handling-middleware.md, routes-examples.md)
+3. **frontend-dev skill** - React + Tailwind CSS patterns
+   - Located in `.claude/skills/frontend-dev/`
+   - 6 detailed resource files (complete-frontend-guide.md, audio-recording.md, component-patterns.md, data-fetching-hooks.md, routing-navigation.md, tailwind-styling.md)
+4. **api-integration skill** - Anthropic Claude & OpenAI Whisper integration
+   - Located in `.claude/skills/api-integration/`
+   - 4 detailed resource files (complete-api-guide.md, anthropic-integration.md, error-handling-retries.md, whisper-integration.md)
+5. **Slash Commands** - Quick references
+   - `/quick-start` - Step-by-step implementation timeline
+   - `/project-structure` - Folder structure and file organization
 
 ### 🎯 What's Been Adapted
 
@@ -46,11 +55,11 @@ This folder contains **production-tested development patterns** from a 6-month e
 ### Quick Start (10 min read, then code!)
 
 1. **Read `INTEGRATION_README.md` first** (5 min)
-   - Understand the resource structure
-   - See how files map to your needs
+   - Understand the Claude Code skills structure
+   - See how skills map to your needs
    - Learn integration approaches
 
-2. **Skim `quick-start-checklist.md`** (5 min)
+2. **Run `/quick-start` command** (5 min)
    - Understand the development flow
    - See time estimates
    - Identify your MVP scope
@@ -63,31 +72,32 @@ This folder contains **production-tested development patterns** from a 6-month e
 ### During Development
 
 **When creating backend routes:**
-→ Reference `backend-development-guide.md`
-- Section: Routes & Controllers
+→ The `backend-dev` skill activates automatically
+- Reference: `.claude/skills/backend-dev/resources/routes-examples.md`
 - Copy: BaseController pattern
 - Use: Service layer examples
 
 **When calling APIs (Anthropic/Whisper):**
-→ Reference `api-integration-guide.md`
+→ The `api-integration` skill activates automatically
+- Reference: `.claude/skills/api-integration/resources/anthropic-integration.md`
 - Copy: Service implementations
 - Use: Error handling patterns
 - Check: Latest model IDs
 
 **When building React components:**
-→ Reference `frontend-development-guide.md`
-- Section: Component Patterns
+→ The `frontend-dev` skill activates automatically
+- Reference: `.claude/skills/frontend-dev/resources/component-patterns.md`
 - Copy: Tailwind styling examples
 - Use: Hook patterns
 
 **When unsure about structure:**
-→ Reference `project-structure-guide.md`
+→ Run the `/project-structure` slash command
 - Check: File naming conventions
 - Copy: Folder templates
 - Use: Configuration files
 
 **When planning your day:**
-→ Reference `quick-start-checklist.md`
+→ Run the `/quick-start` slash command
 - Follow: Phase-by-phase guide
 - Track: Completion checkboxes
 - Adjust: Based on your timeline
@@ -195,33 +205,34 @@ try {
 
 ## Code You Can Copy Directly
 
-### From Backend Guide
-- ✅ `BaseController.js` (complete implementation)
-- ✅ Database schema SQL
-- ✅ Query functions for SQLite
-- ✅ Error handler middleware
-- ✅ Controller templates
+### From backend-dev Skill Resources
+- ✅ `BaseController.js` (complete implementation) - in complete-backend-guide.md
+- ✅ Database schema SQL - in database-sqlite.md
+- ✅ Query functions for SQLite - in database-sqlite.md
+- ✅ Error handler middleware - in error-handling-middleware.md
+- ✅ Controller templates - in routes-examples.md
 
-### From Frontend Guide
-- ✅ `LoadingSpinner.jsx`
-- ✅ `Modal.jsx`
-- ✅ Tailwind configuration
-- ✅ Component templates
-- ✅ Custom hooks patterns
+### From frontend-dev Skill Resources
+- ✅ `LoadingSpinner.jsx` - in component-patterns.md
+- ✅ `Modal.jsx` - in component-patterns.md
+- ✅ Tailwind configuration - in tailwind-styling.md
+- ✅ Component templates - in component-patterns.md
+- ✅ Custom hooks patterns - in data-fetching-hooks.md
+- ✅ Audio recording hook - in audio-recording.md
 
-### From API Integration Guide
-- ✅ `anthropicService.js` (all 3 methods)
-- ✅ `whisperService.js`
-- ✅ Rate limiter middleware
-- ✅ Error handling patterns
-- ✅ Retry logic helper
+### From api-integration Skill Resources
+- ✅ `anthropicService.js` (all 3 methods) - in anthropic-integration.md
+- ✅ `whisperService.js` - in whisper-integration.md
+- ✅ Rate limiter middleware - in complete-api-guide.md
+- ✅ Error handling patterns - in error-handling-retries.md
+- ✅ Retry logic helper - in error-handling-retries.md
 
-### From Project Structure Guide
-- ✅ Complete folder structure
-- ✅ `.gitignore` files
-- ✅ `.env.example` templates
-- ✅ `package.json` dependencies
-- ✅ Configuration files
+### From Slash Commands
+- ✅ Complete folder structure - /project-structure command
+- ✅ `.gitignore` files - /project-structure command
+- ✅ `.env.example` templates - /project-structure command
+- ✅ `package.json` dependencies - /project-structure command
+- ✅ Configuration files - /project-structure command
 
 ---
 
@@ -325,20 +336,21 @@ If you want to take Super Feynman to production after the hackathon:
 
 ### For Specific Tasks
 
-| Task | Resource File | Section |
-|------|--------------|---------|
-| Set up project structure | `project-structure-guide.md` | Recommended Project Structure |
-| Create a route | `backend-development-guide.md` | Routes & Controllers |
-| Create a service | `backend-development-guide.md` | Services Layer |
-| Set up database | `backend-development-guide.md` | Database Layer |
-| Call Anthropic API | `api-integration-guide.md` | Anthropic Claude API |
-| Transcribe audio | `api-integration-guide.md` | OpenAI Whisper API |
-| Create React component | `frontend-development-guide.md` | Component Patterns |
-| Style with Tailwind | `frontend-development-guide.md` | Styling with Tailwind |
-| Handle errors | `frontend-development-guide.md` | Loading & Error States |
-| Set up routing | `frontend-development-guide.md` | Routing |
-| Record audio | `frontend-development-guide.md` | Audio Recording |
-| Plan implementation | `quick-start-checklist.md` | Full checklist |
+| Task | Skill / Command | Resource File |
+|------|----------------|---------------|
+| Set up project structure | `/project-structure` command | project-structure.md |
+| Create a route | `backend-dev` skill | routes-examples.md |
+| Create a service | `backend-dev` skill | architecture-patterns.md |
+| Set up database | `backend-dev` skill | database-sqlite.md |
+| Call Anthropic API | `api-integration` skill | anthropic-integration.md |
+| Transcribe audio | `api-integration` skill | whisper-integration.md |
+| Create React component | `frontend-dev` skill | component-patterns.md |
+| Style with Tailwind | `frontend-dev` skill | tailwind-styling.md |
+| Handle errors (frontend) | `frontend-dev` skill | component-patterns.md |
+| Handle errors (backend) | `backend-dev` skill | error-handling-middleware.md |
+| Set up routing | `frontend-dev` skill | routing-navigation.md |
+| Record audio | `frontend-dev` skill | audio-recording.md |
+| Plan implementation | `/quick-start` command | quick-start.md |
 
 ---
 
