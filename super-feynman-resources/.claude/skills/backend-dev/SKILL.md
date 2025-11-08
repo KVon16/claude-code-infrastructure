@@ -165,7 +165,11 @@ For detailed implementations, see the resources:
 
 | Need to... | Resource File |
 |------------|--------------|
-| Complete backend setup guide | [complete-backend-guide.md](resources/complete-backend-guide.md) |
+| Complete backend overview | [complete-backend-guide.md](resources/complete-backend-guide.md) |
+| Architecture & core patterns | [architecture-patterns.md](resources/architecture-patterns.md) |
+| SQLite database setup & queries | [database-sqlite.md](resources/database-sqlite.md) |
+| Error handling & middleware | [error-handling-middleware.md](resources/error-handling-middleware.md) |
+| Routes & complete examples | [routes-examples.md](resources/routes-examples.md) |
 
 ---
 
