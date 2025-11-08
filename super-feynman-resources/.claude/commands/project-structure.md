@@ -86,14 +86,15 @@ super-feynman/
 │   ├── tailwind.config.js
 │   └── postcss.config.js
 │
-├── docs/                             # Documentation
-│   └── development-guides/           # These resource files
-│       ├── INTEGRATION_README.md
-│       ├── backend-development-guide.md
-│       ├── frontend-development-guide.md
-│       ├── api-integration-guide.md
-│       ├── project-structure-guide.md
-│       └── quick-start-checklist.md
+├── .claude/                          # Claude Code skills (optional)
+│   ├── skills/                       # Development skills from super-feynman-resources
+│   │   ├── backend-dev/
+│   │   ├── frontend-dev/
+│   │   ├── api-integration/
+│   │   └── skill-rules.json
+│   └── commands/                     # Slash commands
+│       ├── quick-start.md
+│       └── project-structure.md
 │
 ├── .gitignore                        # Root gitignore
 └── README.md                         # Project README
