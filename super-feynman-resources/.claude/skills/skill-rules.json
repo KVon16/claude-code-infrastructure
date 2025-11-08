@@ -1,0 +1,104 @@
+{
+  "skills": {
+    "backend-dev": {
+      "triggers": {
+        "keywords": [
+          "express",
+          "controller",
+          "route",
+          "service",
+          "sqlite",
+          "database",
+          "backend",
+          "api endpoint",
+          "multer",
+          "file upload",
+          "BaseController",
+          "middleware",
+          "error handler"
+        ],
+        "file_patterns": [
+          "**/backend/**/*.js",
+          "**/src/controllers/**",
+          "**/src/services/**",
+          "**/src/routes/**",
+          "**/src/db/**",
+          "**/src/middleware/**"
+        ],
+        "intent_patterns": [
+          "create.*route",
+          "create.*controller",
+          "create.*service",
+          "set.*up.*database",
+          "add.*endpoint",
+          "implement.*api"
+        ]
+      }
+    },
+    "frontend-dev": {
+      "triggers": {
+        "keywords": [
+          "react",
+          "component",
+          "tailwind",
+          "jsx",
+          "useState",
+          "useEffect",
+          "frontend",
+          "page",
+          "ui",
+          "css",
+          "styling",
+          "hook",
+          "router"
+        ],
+        "file_patterns": [
+          "**/frontend/**/*.jsx",
+          "**/frontend/**/*.js",
+          "**/src/components/**",
+          "**/src/pages/**",
+          "**/src/hooks/**"
+        ],
+        "intent_patterns": [
+          "create.*component",
+          "create.*page",
+          "style.*with.*tailwind",
+          "add.*useState",
+          "implement.*ui"
+        ]
+      }
+    },
+    "api-integration": {
+      "triggers": {
+        "keywords": [
+          "anthropic",
+          "claude",
+          "whisper",
+          "openai",
+          "api key",
+          "concept generation",
+          "transcribe",
+          "speech to text",
+          "conversation",
+          "feedback",
+          "ai",
+          "llm"
+        ],
+        "file_patterns": [
+          "**/services/anthropicService.js",
+          "**/services/whisperService.js",
+          "**/*Api.js",
+          "**/*api.js"
+        ],
+        "intent_patterns": [
+          "integrate.*anthropic",
+          "integrate.*whisper",
+          "generate.*concepts",
+          "transcribe.*audio",
+          "call.*claude.*api",
+          "implement.*ai"
+        ]
+      }
+    }
+  }
+}
